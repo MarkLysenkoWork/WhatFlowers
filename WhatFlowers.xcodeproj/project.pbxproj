@@ -13,6 +13,7 @@
 		1D4CD18C25AB914F0091866B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CD18A25AB914F0091866B /* Main.storyboard */; };
 		1D4CD18E25AB91510091866B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CD18D25AB91510091866B /* Assets.xcassets */; };
 		1D4CD19125AB91510091866B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CD18F25AB91510091866B /* LaunchScreen.storyboard */; };
+		1D83BC4525ABC4B000345B46 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1D83BC4425ABC4B000345B46 /* FlowerClassifier.mlmodel */; };
 		C5B8E510C4EF037F386A6D14 /* Pods_WhatFlowers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A23E0EA128F99757F98EF6 /* Pods_WhatFlowers.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		1D4CD18D25AB91510091866B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D4CD19025AB91510091866B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D4CD19225AB91510091866B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D83BC4425ABC4B000345B46 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
 		2DD350D647D0048A0F551C16 /* Pods-WhatFlowers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatFlowers.release.xcconfig"; path = "Target Support Files/Pods-WhatFlowers/Pods-WhatFlowers.release.xcconfig"; sourceTree = "<group>"; };
 		85CC627BFE78AB9A2862531A /* Pods-WhatFlowers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatFlowers.debug.xcconfig"; path = "Target Support Files/Pods-WhatFlowers/Pods-WhatFlowers.debug.xcconfig"; sourceTree = "<group>"; };
 		96A23E0EA128F99757F98EF6 /* Pods_WhatFlowers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatFlowers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,7 @@
 				1D4CD18D25AB91510091866B /* Assets.xcassets */,
 				1D4CD18F25AB91510091866B /* LaunchScreen.storyboard */,
 				1D4CD19225AB91510091866B /* Info.plist */,
+				1D83BC4425ABC4B000345B46 /* FlowerClassifier.mlmodel */,
 			);
 			path = WhatFlowers;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D83BC4525ABC4B000345B46 /* FlowerClassifier.mlmodel in Sources */,
 				1D4CD18925AB914F0091866B /* ViewController.swift in Sources */,
 				1D4CD18525AB914F0091866B /* AppDelegate.swift in Sources */,
 				1D4CD18725AB914F0091866B /* SceneDelegate.swift in Sources */,

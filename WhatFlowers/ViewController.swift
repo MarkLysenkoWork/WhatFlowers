@@ -33,33 +33,33 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             guard let convertedCIImage = CIImage(image: userPickerImage) else {
                 fatalError("cannot convert to CIImage.")
             }
-            //detect(image: convertedCIImage)
+            detect(image: convertedCIImage)
             imageView.image = userPickerImage
         }
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
-//    func detect(image: CIImage) {
-//        guard let model = try? VNCoreMLModel(for: FlowerClassifier().model) else {
-//            fatalError("Cannot import model")
-//        }
-//
-//        let request = VNCoreMLRequest(model: model) { (request, error) in
-//            guard let classification = request.results?.first as? VNClassificationObservation else {
-//                fatalError("Could not classify image.")
-//            }
-//            self.navigationItem.title = classification.identifier.capitalized
-//            self.requestInfo(flowerName: classification.identifier)
-//        }
-//
-//        let handler = VNImageRequestHandler(ciImage: image)
-//
-//        do {
-//            try handler.perform([request])
-//        } catch {
-//            print(error)
-//        }
-//    }
+    func detect(image: CIImage) {
+        guard let model = try? VNCoreMLModel(for: FlowerClassifier().model) else {
+            fatalError("Cannot import model")
+        }
+
+        let request = VNCoreMLRequest(model: model) { (request, error) in
+            guard let classification = request.results?.first as? VNClassificationObservation else {
+                fatalError("Could not classify image.")
+            }
+            self.navigationItem.title = classification.identifier.capitalized
+            self.requestInfo(flowerName: classification.identifier)
+        }
+
+        let handler = VNImageRequestHandler(ciImage: image)
+
+        do {
+            try handler.perform([request])
+        } catch {
+            print(error)
+        }
+    }
     
     func requestInfo(flowerName: String) {
         
